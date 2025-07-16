@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+.sidebar {
+  background-color: rgb(238, 238, 238);
+  display: block;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  overflow: auto;
+  height: 100vh;
+  width: 250px;
+  font-size: 13px;
+}
+
+.main {
+  display: block;
+  margin-left: 250px;
+}

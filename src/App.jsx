@@ -1,18 +1,18 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import layout from './components/layout'
-import sidebar from './components/sidebar'
-import content from './components/content'
-import general from './pages/Settings/general'
-import basic from './pages/settings/basic'
+import Layout from './components/layout'
+import Sidebar from './components/sidebar'
+import Content from './components/content'
+import General from './pages/Settings/general'
+import Basic from './pages/settings/basic'
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* nested routes within Layout component wrapper */}
-        <Route>path="/" element={<layout />}
-            <Route>index element={<general />}</Route>
-            <Route>path="" element={<basic />}</Route>
+        <Route>path="/" element={<Layout />}
+            <Route>index element={<General />}</Route>
+            <Route>path="/basic" element={<Basic />}</Route>
             {/* todo: add routes for rest of pages */}
         </Route>
         
